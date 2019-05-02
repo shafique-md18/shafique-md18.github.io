@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My first Bulma website</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/animate.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar box container animated fadeInDown"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#home">
+          <h1 class="title" id="logo">
+            <span class="uline">Shafique Mohammad</span>
+          </h1>
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-size-5">
+            Home
+          </a>
+
+          <a class="navbar-item is-size-5">
+            About
+          </a>
+
+          <a class="navbar-item is-size-5">
+            Skills
+          </a>
+
+          <a class="navbar-item is-size-5">
+            Projects
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a
+                class="button is-primary is-outlined is-size-5 is-rounded is-info"
+              >
+                <strong>Say Hello</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Intro -->
+    <section>
+      <div class="box container">
+        <div class="columns" id="intro">
+          <div class="column animated fadeInLeft" id="intro-1">
+            <div class="image">
+              <figure class="image">
+                <img src="/img/dev.png" alt="dev-profile" />
+              </figure>
+            </div>
+          </div>
+          <div class="column" id="intro-2">
+            <ul class="animated fadeInRight">
+              <li class="is-size-4">Hi,</li>
+              <li class="is-size-2 is-size-3-mobile">I am <em>Shafique Mohammad</em></li>
+              <li class="is-size-3 is-size-5-mobile">
+                Computer Science Undergraduate
+              </li>
+              <li style="margin-top:15px; align-self: center;">
+                <a href="#" class="button is-light is-rounded"
+                  ><em><span class="is-size-5">Download Résumé</span></em></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Intro Ends -->
+
+    <!-- About section -->
+    <section id="about" class="wow jackInTheBox">
+      <div class="box container">
+        <div class="columns">
+          <div class="column">
+            <h1 class="title has-text-centered">
+              <span class="uline">About Me</span>
+            </h1>
+            <hr />
+            <p class="has-text-centered" style="margin-top:25px;">
+              Hello, I'm Shafique, currently pursuing engineering degree in
+              Computer Science. <em>Nice to meet you.</em><br />
+              I was always curiously interested in technology, music, sports and
+              books. <br />
+              I'm quietly <em>confident</em>, naturally <em>curious</em>, and
+              perpetually working on <em>improving my skills</em> one day at a
+              time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section ends -->
+    <!-- Skills section -->
+    <section id="skills">
+      <div class="box container">
+        <h1 class="title has-text-centered">
+          <span class="uline">Skills</span>
+        </h1>
+        <p class="has-text-centered">
+          As a developer, below are some of the programming languages and tools
+          that I've used in my projects and at college assignments.
+        </p>
+        <hr />
+        <div class="columns">
+          <div class="column is-6">
+            <h1 class="content is-size-5">Python / Django</h1>
+            <div data-wow-delay=".2s" class="ProgressBar wow fadeInLeft">
+              <div class="Progress" id="pro-70">
+                <h2>70%</h2>
+              </div>
+            </div>
+            <h1 class="content is-size-5">C / C++</h1>
+            <div data-wow-delay=".2s" class="ProgressBar wow fadeInLeft">
+              <div class="Progress" id="pro-70">
+                <h2>70%</h2>
+              </div>
+            </div>
+            <h1 class="content is-size-5">Java</h1>
+            <div data-wow-delay=".2s" class="ProgressBar wow fadeInLeft">
+              <div class="Progress" id="pro-65">
+                <h2>65%</h2>
+              </div>
+            </div>
+            <h1 class="content is-size-5">MySQL</h1>
+            <div data-wow-delay=".2s" class="ProgressBar wow fadeInLeft">
+              <div class="Progress" id="pro-60">
+                <h2>60%</h2>
+              </div>
+            </div>
+            <h1 class="content is-size-5">Git</h1>
+            <div data-wow-delay=".2s" class="ProgressBar wow fadeInLeft">
+              <div class="Progress" id="pro-70">
+                <h2>70%</h2>
+              </div>
+            </div>
+            <h1 class="content is-size-5">HTML / CSS3</h1>
+            <div data-wow-delay=".2s" class="ProgressBar wow fadeInLeft">
+              <div class="Progress" id="pro-65">
+                <h2>65%</h2>
+              </div>
+            </div>
+          </div>
+          <div class="column is-6 wow fadeInRight col-img is-hidden-mobile">
+            <div class="image">
+              <figure class="image">
+                <img src="/img/prog.png" alt="programming" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills section ends -->
+    <!-- Project Section -->
+    <section id="projects">
+      <div class="box container">
+        <h1 class="title has-text-centered">
+          <span class="uline">Projects</span>
+        </h1>
+        <hr />
+        <div id="projectItem-1">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="img/efarmer.png" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Efarmer</p>
+                  <p class="subtitle is-6">Ecommerce Web Application</p>
+                </div>
+              </div>
+
+              <div class="content">
+                Efarmer is an ecommerce web application that supports listing
+                products for sale as an admin, and customers can register,
+                login, create profile, save addresses and order products.<br />
+                I had built this project as part of Smart India Hackathon 2019
+                and college coursework.
+                <br />
+                <div class="tech-stack">
+                  <p>
+                    <span class="tag is-dark is-medium">Python / Django</span>
+                    <span class="tag is-link is-medium">JavaScript</span>
+                    <span class="tag is-info is-medium">HTML5</span>
+                    <span class="tag is-warning is-medium"
+                      >CSS3(Bootstrap)</span
+                    >
+                    <span class="tag is-primary is-medium">Git</span>
+                  </p>
+                </div>
+                <time datetime="2019-1-1">Jan 2016</time> -
+                <time datetime="2019-3-1">Mar 2019</time>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <span>
+                  View Code on
+                  <a
+                    href="https://github.com/shafique-md18/efarmer"
+                    target="_blank"
+                    >Github</a
+                  >
+                </span>
+              </p>
+              <p class="card-footer-item">
+                <span>
+                  Visit
+                  <a href="http://efarmer.pythonanywhere.com" target="_blank"
+                    >website</a
+                  >
+                </span>
+              </p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project section ends -->
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="box container">
+        <h2 class="title has-text-centered">
+          <span class="uline">Contact Me</span>
+        </h2>
+        <p class="has-text-centered">
+          If you would like to get in touch with me, be it for exploring a
+          technology, a business, or to just say hi, <br />
+          feel free to send me an email at
+          <a href="mailto:shafique.md18@gmail.com">shafique.md18@gmail.com</a>
+        </p>
+        <hr />
+        <h2 class="title has-text-centered">
+          <span class="uline">Lets get social.</span>
+        </h2> <hr>
+        <div id="social">
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                  <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                      <a class="tile is-child notification is-primary" href="https://github.com/shafique-md18" target="_blank">
+                        <p class="title is-text-white"><span><i class="fab fa-github"></i>Github</p>
+                        </a>
+                      <a class="tile is-child notification is-warning" href="https://twitter.com/Shafique_md18">
+                        <p class="title"><span><i class="fab fa-twitter"></i></span>Twitter</p>
+                      </a>
+                    </div>
+                    <div class="tile is-parent">
+                      <a class="tile is-child notification is-info" href="https://www.linkedin.com/in/shafique-mohammad-099818129/">
+                        <p class="title is-size-3-mobile is-size-2"><span><i class="fab fa-linkedin"></i>Linkedin</p>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+    <!-- Footer -->
+    <footer>
+      <div class="box container has-text-centered">
+          <p class="subtitle is-size-6">This website was handcrafted with ❤️ <br>
+              by Shafique Mohammad <br>
+              using <a href="https://bulma.io"><u>Bulma</u></a> + <a href="https://daneden.github.io/animate.css/"><u>AnimateJS</u></a><br>
+              Source code on <a href="#"><u>Github</u></a>
+          </p>
+      </div>
+    </footer>
+    <!-- Footer ends -->
+    <script type="text/javascript" src="lib/main.js"></script>
+    <script src="http://mynameismatthieu.com/WOW/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- <script src="js/wow.min.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true // default
+      });
+      wow.init();
+    </script> -->
+  </body>
+</html>

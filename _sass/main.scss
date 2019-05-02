@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/bulma";
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Just+Another+Hand|Pacifico");
+$primary: #900048;
+$primary-light: #ff8260;
+$primary-dark: #240041;
+$secondary: #ff4057;
+$dark: #323232;
+
+html,
+body {
+  height: 100%;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.uline {
+  position: relative;
+  // height: -10px;
+  border-bottom: solid 7px $primary-light;
+}
+
+#logo {
+  font-family: "Pacifico";
+  color: $primary-dark;
+  font-weight: 300;
+}
+
+.col-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+section {
+  ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    align-content: center;
+    padding-left: 20px;
+  }
+  #intro-2 {
+    background: linear-gradient(270deg, #900048, #ff4057);
+    background-size: 400% 400%;
+    color: white;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @-moz-keyframes AnimationName {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    @keyframes AnimationName {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  }
+}
+
+#skills {
+  p {
+    margin-top: 20px;
+  }
+  .ProgressBar {
+    width: 100%;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: #eeeeee;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    animation-duration: 3s;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    margin-right: 10px;
+    font-family: "Pacifico";
+    overflow: hidden;
+    margin-left: auto;
+  }
+
+  #pro-60 {
+    width: 60%;
+    animation: 2s 1 pro60-anim;
+    background: #2fa499;
+  }
+
+  @keyframes pro60-anim {
+    0% {
+      width: 10%;
+    }
+    100% {
+      width: 60%;
+    }
+  }
+
+  #pro-65 {
+    width: 65%;
+    animation: 2s 1 pro65-anim;
+    background: #2c98f0;
+  }
+
+  @keyframes pro65-anim {
+    0% {
+      width: 10%;
+    }
+    100% {
+      width: 65%;
+    }
+  }
+
+  #pro-70 {
+    width: 70%;
+    animation: 2s 1 pro70-anim;
+    background: #ec5453;
+  }
+
+  @keyframes pro70-anim {
+    0% {
+      width: 10%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+
+  .Progress {
+    background-color: #4a90e2;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+  }
+
+  img {
+    width: 256px;
+    height: 256px;
+  }
+
+  .col-img {
+    animation-duration: 3s;
+  }
+}
+
+#projects {
+  #projectItem-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    max-width: 780px;
+  }
+
+  .image {
+    border: 1px solid black;
+  }
+
+  .subtitle {
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+  }
+
+  .tech-stack {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .tag {
+    margin-right: 10px;
+    margin-bottom: 5px; // for mobile
+  }
+}
+
+#contact {
+  .is-ancestor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .fab {
+    margin-right: 10px;
+  }
+
+  .is-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .is-child:hover {
+    text-decoration: underline;
+  }
+}
+
+#about,
+#skills,
+#projects,
+#contact,
+footer {
+  margin-top: 20px;
+}
+
+footer {
+  margin-bottom: 10px;
+}
