@@ -20,6 +20,7 @@ $primary-invert: $pink-invert;
 */
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @import url("https://fonts.googleapis.com/css?family=Inconsolata|Just+Another+Hand|Pacifico");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display&family=Roboto+Mono:wght@300;400&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;1,300&display=swap");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -6980,7 +6981,9 @@ label.panel-block {
 html,
 body {
   height: 100%;
-  margin-top: 10px; }
+  margin-top: 10px;
+  word-spacing: -2px;
+  font-family: 'Roboto Mono', monospace; }
 
 p {
   font-size: 1.1rem; }
@@ -6993,9 +6996,8 @@ p {
   border-bottom: solid 7px #ff8260; }
 
 #logo {
-  font-family: "Pacifico";
   color: #240041;
-  font-weight: 300; }
+  font-weight: 500; }
 
 .col-img {
   display: flex;
@@ -7017,6 +7019,8 @@ p {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+  p {
+    font-size: 0.9em; }
   .sk-icon {
     width: 170px !important;
     height: 170px !important; } }
@@ -7103,9 +7107,7 @@ section #intro-2 {
 
 #projects .subtitle {
   margin-bottom: 0;
-  margin-top: 20px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-decoration: underline; }
+  color: grey; }
 
 #projects .tech-stack {
   margin-top: 15px;
